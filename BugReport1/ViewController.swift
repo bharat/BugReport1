@@ -7,19 +7,14 @@
 //
 
 import UIKit
+import BugReport1_Framework
 
 class ViewController: UIViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        let d = DerivedClass()
+        print(d.doSomething(Double()))
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 
